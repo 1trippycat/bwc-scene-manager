@@ -1,15 +1,17 @@
 # BWC Scene Manager version .01
 
-The **BWC Scene Manager** is a Python script designed to help efficiently manage body-worn camera (BWC) footage. It analyzes a folder containing video files and generates CSV and M3U playlist files based on user-selected options. The script identifies overlapping video segments (concurrent scenes), exports data into groups/playlists, and detects missing time chunks.
+The **BWC Scene Manager** is a Python script designed to help efficiently manage body-worn camera (BWC) footage.  Designed exclusively for usage by the brave souls defending justice in Public Defender's offices all over the world.  The script identifies overlapping video segments (concurrent scenes), exports data into groups/playlists, and detects missing time chunks.
 
 ## Features
+
 - Groups videos into concurrent scenes based on overlapping timeframes.
-- Generates `.m3u` playlists for each group of concurrent scenes.
+- Generates `.m3u` playlists for each group of concurrent scenes in time series order.
 - Exports CSV data with grouped video metadata.
 - Detects and exports missing time chunks in CSV format.
 - Allows users to choose specific export options through a menu.
 
 ## Required Naming Convention
+
 To work correctly, video files need to follow a strict naming format:
 
 ```officerFirstName_officerLastName_MM_DD_YYYY_HH_mm_ss_caseNumber.extension```
@@ -25,11 +27,13 @@ To work correctly, video files need to follow a strict naming format:
 - `caseNumber`: An alphanumeric identifier for the associated case or incident.
 
 ### Example
+
 A valid filename following this format:
 
 ```John_Doe_05_15_2024_13_45_30_123456789.mp4```
 
 ## How to Use the Script
+
 1. **Set Up Environment:**
    - Ensure you have Python installed (version 3.7+ recommended).
    - Install dependencies with:
@@ -58,6 +62,7 @@ A valid filename following this format:
    - Review the terminal output to confirm the paths to the generated files.
 
 ## Troubleshooting
+
 - Ensure all filenames adhere to the required format.
 - If there are errors processing specific files, check the terminal output for error messages.
 
@@ -74,6 +79,6 @@ To download and install the executable version of the **BWC Scene Manager**:
 
 3. Once downloaded, simply run the executable to start using the program.
 
-
 ## License
+
 This script is provided under this [Custom License Agreement](LICENSE)..  
