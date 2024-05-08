@@ -1,6 +1,7 @@
 # Ignore PyInstaller build directories
 /build/
 /dist/
+/distros/
 
 # Ignore virtual environment directory
 /venv/
